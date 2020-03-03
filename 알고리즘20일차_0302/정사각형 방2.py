@@ -1,3 +1,5 @@
+import sys
+#sys.stdin = open("input.txt", "r")
 dr = [1,-1,0,0]
 dc = [0,0,1,-1]
 def check(n,m,M):
