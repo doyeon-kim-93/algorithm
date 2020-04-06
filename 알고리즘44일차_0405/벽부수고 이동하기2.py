@@ -16,7 +16,7 @@ def bfs(a,b,c):
                     visit[nr][nc][v] = visit[r][c][v] + 1
                     q += [(nr,nc,v)]
                 if v == 0 and arr[nr][nc] == 1 and visit[nr][nc][v+1] == -1:
-                    visit[nr][nc][v+1] = visit[nr][nc][v] + 1
+                    visit[nr][nc][v+1] = visit[r][c][v] + 1
                     q += [(nr,nc,v+1)]
 arr = [list(map(int,input())) for _ in range(N)]
 visit = [[[-1]*2 for _ in range(M)] for _ in range(N)]
