@@ -1,10 +1,13 @@
 def back_tracking(idx):
+    global result
     for i in range(1, (idx//2) + 1):
-        if s[-i:] == s[-2*i:-i]: return -1
+        if s[-i:] == s[-2*i:-i]:
+            return -1
 
     if idx == n:
         for i in range(n):
-            print(s[i], end = '')
+            con = ''.join(map(str,s))
+            result = min(result,int(con))
         return 0
 
     for i in range(1, 4):
@@ -15,4 +18,6 @@ def back_tracking(idx):
 
 n = int(input())
 s = []
+result = 987654321
 back_tracking(0)
+print(result)
