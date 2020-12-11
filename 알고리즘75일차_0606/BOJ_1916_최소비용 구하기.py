@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open("input.txt", "r")
-
 import heapq
 from sys import stdin
 input = stdin.readline
