@@ -25,8 +25,8 @@ result = bel()
 if result == -1:
     print(-1)
 else:
-    for i in range(1,len(result)):
-        if result[i] == 'inf':
+    for i in range(2,len(result)):
+        if result[i] == float('inf'):
             print(-1)
         else:
             print(result[i])
